@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HPlusSport Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>HPlusSport Store</h1>
+    <p>Connected to live API</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button onclick="loadProducts()">Load All Products</button>
+      <div class="add-form">
+        <input id="newName" placeholder="Product name" />
+        <input id="newPrice" placeholder="Price" type="number" />
+        <button onclick="addProduct()">Add Product</button>
+      </div>
+    </section>
+
+    <div id="status"></div>
+    <div id="product-list"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
